@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+div#point {
+  box-sizing: content-box;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stretched-border {
+  position: relative;
+  padding: 20px;
+  background-color: white;
+  opacity: 0.5;
+  filter: grayscale(100%);
+}
+.stretched-border::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: 6px solid black;
+  z-index: -1;
+}
+
+#bottone1 {
+  padding: 16px 33px;
+  border-radius: 9px;
+  background: #ffffff;
+  border: none;
+  font-family: inherit;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
+  position: relative;
+  top: 30px;
+}
+
+#bottone1:hover {
+  box-shadow: 7px 5px 56px -14px #ffffff;
+}
+
+#bottone1:active {
+  transform: scale(0.97);
+  box-shadow: 7px 5px 56px -10px #ffffff;
+}
+
+header .logo {
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.toggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url('https://i.ibb.co/HrfVRcx/menu.png') no-repeat center;
+  background-size: 30px;
+  cursor: pointer;
+}
+
+.toggle.active {
+  background: url('https://i.ibb.co/hVPL7kk/close.png') no-repeat center;
+  background-size: 25px;
+  cursor: pointer;
+}
+
+.showcase {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.showcase.active {
+  right: 300px;
+}
+
+.showcase video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  opacity: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: overlay;
+}
+
+.text {
+  position: relative;
+  z-index: 10;
+}
+
+.text h2 {
+  font-size: 5em;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.text h3 {
+  font-size: 4em;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.text p {
+  font-size: 1.4em;
+  color: #fff;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+
+.text a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+.social {
+  position: absolute;
+  z-index: 10;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social li {
+  list-style: none;
+}
+
+.social li a {
+  display: inline-block;
+  margin-right: 20px;
+  filter: invert(1);
+  transform: scale(0.5);
+  transition: 0.5s;
+}
+
+.social li a:hover {
+  transform: scale(0.5) translateY(-15px);
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu ul {
+  position: relative;
+}
+
+.menu ul li {
+  list-style: none;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #111;
+}
+
+.menu ul li a:hover {
+  color: #000000;
+}
+
+.bgvid {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  transform: translateY(-56%);
+  object-fit: cover;
+  object-position: center bottom;
+  z-index: -1;
+}
+
+@media (max-width: 991px) {
+  .showcase,
+  .showcase header {
+    padding: 40px;
+  }
+
+  .text h2 {
+    font-size: 3em;
+  }
+
+  .text h3 {
+    font-size: 2em;
+  }
+
+  .showcase video,
+  .bgvid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  .toggle {
+    display: block;
+  }
+
+  .navbar {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .toggle {
+    display: block;
+  }
+
+  .navbar {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .toggle {
+    display: block;
+  }
+
+  .navbar {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .toggle {
+    display: none;
+  }
+
+  .navbar {
+    display: block !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .toggle {
+    display: none;
+  }
+
+  .navbar {
+    display: block !important;
+  }
+}
