@@ -9,29 +9,29 @@ document.getElementById("FeButton2").addEventListener("click", scrollToFeatures)
 
 function scrollToTop(){
     window.scrollTo({top: 0, behavior: 'smooth'});
-}
+  }
 
-function scrollToHome() {
+  function scrollToHome() {
     const targetDiv = document.getElementById('Home');
     targetDiv.scrollIntoView({ behavior: 'smooth' });
 }
 
 function scrollToFeatures() {
-    const targetDiv = document.getElementById('Features');
-    targetDiv.scrollIntoView({ behavior: 'smooth' });
+  const targetDiv = document.getElementById('Features');
+  targetDiv.scrollIntoView({ behavior: 'smooth' });
 }
 
 function scrollToStatistics() {
-    const targetDiv = document.getElementById('Statistics');
-    targetDiv.scrollIntoView({ behavior: 'smooth' });
+  const targetDiv = document.getElementById('Statistics');
+  targetDiv.scrollIntoView({ behavior: 'smooth' });
 }
 
 function scrollToFaqs() {
-    const targetDiv = document.getElementById('Faqs');
-    targetDiv.scrollIntoView({ behavior: 'smooth' });
+  const targetDiv = document.getElementById('Faqs');
+  targetDiv.scrollIntoView({ behavior: 'smooth' });
 }
 
 function scrollToVote() {
-    const targetDiv = document.getElementById('Vote');
-    targetDiv.scrollIntoView({ behavior: 'smooth' });
+  const targetDiv = document.getElementById('Vote');
+  targetDiv.scrollIntoView({ behavior: 'smooth' });
 }
