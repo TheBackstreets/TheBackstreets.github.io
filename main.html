@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <link rel="stylesheet" href="ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/a3.css">
+    <link rel="stylesheet" href="npm/bootstrap-icons-1.11.1/font/bootstrap-icons.css">
+    <link href="css/a.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/a2.css">
+    <link rel="shortcut icon" href="icons/1035929703866961991/5157e455efee06b8773658fd3e44e2d1.png" type="image/x-icon">
+    <meta property="og:title" content="The Backstreets"/>
+    <meta property="og:description" content="Welcome to The Backstreets, a vibrant Discord server filled with exciting features, giveaways, and a friendly community."/>
+    <meta property="og:image" content="img/TBLogo.png"/>
+    <meta name="theme-color" content="#030303"/>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Made with 🫶🏼 by misclassify">
+    <title>The Backstreets</title>
+	<link rel="canonical" href="http://www.TheBackstreets.github.io/main" />
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <h2 class="logo">The Backstreets</h2>
+        <div style="background-color: transparent !important;" class="navbar navbar-expand-md bg-dark navbar-dark">
+            <div class="a">
+                <div class="collapse navbar-collapse" id="mainmenu">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a style="color: white !important; cursor: pointer;" id="FeButton" class="nav-link">Features</a></li>
+                        <li class="nav-item"><a style="color: white !important; cursor: pointer;" id="StatButton" class="nav-link">Statics</a></li>
+                        <li class="nav-item"><a style="color: white !important; cursor: pointer;" id="VoteButton" class="nav-link">Vote</a></li>
+                        <li class="nav-item"><a style="color: white !important; cursor: pointer;" id="FaqButton" class="nav-link">Faqs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="toggle"></div>
+        </div>
+    </header>
+    <section id="Home" style="min-height: 50vh !important;" class="showcase">
+        <div class="container grid">
+            <div style="margin-top: 50px; z-index: 1;" class="showcase-text">
+                <h1>The Backstreets</h1>
+                <p>Welcome to The Backstreets, a vibrant Discord server filled with exciting features, giveaways, and a friendly
+                    community.</p>
+                <a href="https://discord.gg/soon" class="btn btn-outline">Join</a>
+            </div>
+        </div>
+        <video style="z-index: -1;" src="https://www.TheBackstreets.github.io/assets/videos/vid.mp4" muted loop autoplay></video>
+    </section>
+    <!-- a -->
+    <section id="Features" class="stats">
+        <div class="container">
+            <h2 style="color: #333333;" class="stats-heading text-center my-1">
+                Features
+            </h2>
+            <div class="grid grid-3 text-center my-4">
+                <div>
+                    <i class="fas fa-gift fa-3x"></i>
+                    <h3>Giveaways</h3>
+                    <p class="text-secondary">Participate for a chance to win exciting prizes.</p>
+                </div>
+                <div>
+                    <i class="fas fa-user-friends fa-3x"></i>
+                    <h3>Friendly</h3>
+                    <p class="text-secondary">Friendly atmosphere with a relaxed vibe.</p>
+                </div>
+                <div>
+                    <i class="fas fa-robot fa-3x"></i>
+                    <h3>Fun Bots</h3>
+                    <p class="text-secondary">Bots for laughs, games, and enjoyable interactions.</p>
+                </div>
+                <div>
+                    <i class="fas fa-hands-helping fa-3x"></i>
+                    <h3>Partnerships</h3>
+                    <p class="text-secondary">Foster growth with partnerships.</p>
+                </div>
+                <div>
+                    <i class="fas fa-question fa-3x"></i>
+                    <h3>FOTDs</h3>
+                    <p class="text-secondary">Fuel curiosity with fascinating daily facts.</p>
+                </div>
+                <div>
+                    <i class="fas fa-user-check fa-3x"></i>
+                    <h3>Affiliate</h3>
+                    <p class="text-secondary">Affiliation with the server.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Cloud -->
+    <!-- <section id="Statistics" class="cloud bg-primary my-2 py-2">
+        <div class="container">
+            <h2 style="color: white;" class="stats-heading text-center my-1">
+                Statistics
+            </h2>
+            <div class="grid grid-3 text-center my-4">
+                <div>
+                    <i class="fas fa-users fa-3x"></i>
+                    <p class="text-secondary">
+                        2441
+                    </p>
+                    <h3>Members</h3>
+                </div>
+                <div>
+                    <i class="fas fa-signal fa-3x"></i>
+                    <p class="text-secondary">
+                        276
+                    </p>
+                    <h3>Online</h3>
+                </div>
+                <div>
+                    <i class="fas fa-hashtag fa-3x"></i>
+                    <p class="text-secondary">
+                        83
+                    </p>
+                    <h3>Channels</h3>
+                </div>
+                <div>
+                    <i class="fas fa-rocket fa-3x"></i>
+                    <p class="text-secondary">
+                        4
+                    </p>
+                    <h3>Active Events</h3>
+                </div>
+                <div>
+                    <img class="disableDrag" style="width: 4em !important; margin-top: 14px;"
+                        src="https://i.ibb.co/NZkRCm6/image-12.png" alt="boostIcon">
+                    <p class="text-secondary">
+                        20
+                    </p>
+                    <h3>Boosts</h3>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section id="Statistics" class="cloud bg-primary my-2 py-2" style="position: relative; overflow: hidden; z-index: 1;">
+        <div class="container" style="position: relative; z-index: 1;">
+            <h2 style="color: white;" class="stats-heading text-center my-1">
+                Statistics
+            </h2>
+            <div class="grid grid-3 text-center my-4">
+                <div>
+                    <i class="fas fa-users fa-3x"></i>
+                    <p class="text-secondary">
+                        2441
+                    </p>
+                    <h3>Members</h3>
+                </div>
+                <div>
+                    <i class="fas fa-signal fa-3x"></i>
+                    <p class="text-secondary">
+                        276
+                    </p>
+                    <h3>Online</h3>
+                </div>
+                <div>
+                    <i class="fas fa-hashtag fa-3x"></i>
+                    <p class="text-secondary">
+                        83
+                    </p>
+                    <h3>Channels</h3>
+                </div>
+                <div>
+                    <i class="fas fa-rocket fa-3x"></i>
+                    <p class="text-secondary">
+                        4
+                    </p>
+                    <h3>Active Events</h3>
+                </div>
+                <div>
+                    <img class="disableDrag" style="width: 4em !important; margin-top: 14px;" src="NZkRCm6/image-12.png" alt="boostIcon">
+                    <p class="text-secondary">
+                        20
+                    </p>
+                    <h3>Boosts</h3>
+                </div>
+            </div>
+        </div>
+        <video class="bgvid" src="https://www.TheBackstreets.github.io/assets/videos/vid2.mp4" muted loop autoplay></video>
+    </section>
+    <section class="stats">
+        <div class="container">
+            <h2 style="color: #333333;" class="stats-heading text-center my-1">
+                Powered by top bots
+            </h2>
+            <div class="grid grid-3 text-center my-4">
+                    <div>
+                        <i style="margin-top: 10px !important;"><img class="disableDrag" src="avatars/270904126974590976/a_24778db4737114253ac3b30f45f1979f_size-80.png"></i>
+                        <h3>
+                            Dank Memer
+                        </h3>
+                    </div>
+                    <div>
+                        <i style="margin-top: 10px !important;"><img class="disableDrag" src="avatars/408785106942164992/497f4ee8388722ccdb35493ca0b61ef7_size-80.png"></i>
+                        <h3>
+                            OwO
+                        </h3>
+                    </div>
+                    <div>
+                        <i style="margin-top: 10px !important;"><img class="disableDrag" src="avatars/155149108183695360/b4fdfc64edff74c37e1574d34fad66c2_size-80.png"></i>
+                        <h3>
+                            Dyno
+                        </h3>
+                    </div>
+                    <div>
+                        <i style="margin-top: 10px !important;"><img class="disableDrag" src="avatars/467377486141980682/1c67806e297f30f48e38e20d2356c907_size-80.png"></i>
+                        <h3>
+                            Countr
+                        </h3>
+                    </div>
+                    <div>
+                        <i style="margin-top: 10px !important;"><img class="disableDrag" src="avatars/536991182035746816/c850c9bbeb25e119a4c85a9bfdb7871e_size-80.png"></i>
+                        <h3>
+                            Wick
+                        </h3>
+                    </div>
+                    <div>
+                        <i style="margin-top: 10px !important;"><img class="disableDrag" src="avatars/912904756261949540/a8b5d1a5aa91f944b168209e70193d98_size-80.png"></i>
+                        <h3>
+                            Spicy
+                        </h3>
+                    </div>
+            </div>
+            <h3 style="color: #333333; margin-bottom: 30px;" class="stats-heading text-center my-1">
+                + 40 more
+            </h3>
+        </div>
+    </section>
+    <section class="cloud bg-primary my-2 py-2" id="Vote" style="position: relative; overflow: hidden; z-index: 1;">
+        <div class="container">
+            <h2 style="color: white;" class="stats-heading text-center my-1">
+                Vote for us
+            </h2>
+            <div style="grid-template-columns: repeat(1, 1fr);" class="grid grid-3 text-center my-4">
+                <div>
+                    <i><img class="disableDrag" src="5GZxwJV/e-YMmn-Jg-400x400.png"></i>
+                    <h3>DISCORDS.COM</h3>
+                    <a href="https://discord.com/invite/pCEuxKaB2s" class="btn btn-outline">Vote</a>
+                </div>
+            </div>
+        </div>
+        <video class="bgvid" src="https://www.TheBackstreets.github.io/assets/videos/vid3.mp4" muted loop autoplay></video>
+    </section>
+    <section class="stats">
+        <div class="container">
+            <h2 style="color: #333333;" class="stats-heading text-center my-1">
+                Our Team
+            </h2>
+            <h3 style="color: #333333; font-size: 35px; margin-top: 10px; " class="stats-heading text-center my-1">
+                Owner
+            </h3>
+            <div style="    grid-template-columns: 1fr !important;
+            grid-template-rows: 1fr !important;" class="grid grid-3 text-center my-4">
+                <div style="background-image: url(banners/725723605723381811/a_5ad8a7598df344c025e8d0db88521128_size-1024.gif); background-repeat: no-repeat; background-size: cover;">
+                    <div style="padding-top: 10px; background-color: transparent;" id="pfp">
+                        <img id="discord-avatar" src="avatars/725723605723381811/7c48766c1d2ca4f447abc0c849d8f2b9_size-80.png" alt="server Owner Profile Picture" class="disableDrag">
+                        <div id="point" class="offline">
+                            <div id="symbol"></div>
+                        </div>
+                    </div>
+                    <h3 style="font-size: 30px;">
+                        Exptel | .gg/xon
+                    </h3>
+                    <h4 style="font-size: 20px; margin-bottom: 5px;">
+                        exptel
+                    </h4>
+                </div>
+            </div>
+            <h3 style="color: #333333; font-size: 35px; margin-top: 10px; " class="stats-heading text-center my-1">
+                Dark
+            </h3>
+            <div style="    grid-template-columns: 1fr !important;
+            grid-template-rows: 1fr !important;" class="grid grid-3 text-center my-4">
+                <div style="background-image: url(banners/762320818914983937/a_6a94cf2795216f73fed06cac318527af_size-1024.gif); background-repeat: no-repeat; background-size: cover;">
+                    <div style="padding-top: 10px; background-color: transparent;" id="pfp">
+                        <img id="discord-avatar" src="avatars/762320818914983937/a_045e649e09a95f535e9fcec2c0273a53_size-80.gif" alt="server Owner Profile Picture" class="disableDrag">
+                        <div id="point" class="dnd">
+                            <div id="symbol"></div>
+                        </div>
+                    </div>
+                    <h3 style="font-size: 30px;">
+                        Vladimir Cheese
+                    </h3>
+                    <h4 style="font-size: 20px; margin-bottom: 5px;">
+                        vladimir.dark
+                    </h4>
+                </div>
+            </div>
+            <h3 style="color: #333333; font-size: 35px; margin-top: 10px; " class="stats-heading text-center my-1">
+                Acting Owner [1]
+            </h3>
+            <div style="    grid-template-columns: 1fr !important;
+            grid-template-rows: 1fr !important;" class="grid grid-3 text-center my-4">
+                    <div style="background-image: url(https://xon.lol/main); background-repeat: no-repeat; background-size: cover; ">
+                        <div style="padding-top: 10px; background-color: transparent;" id="pfp">
+                            <img id="discord-avatar" src="avatars/333935749626068992/76f794639e9c73181c03ed91f2898c28_size-80.png" class="disableDrag" alt="">
+                            <div id="point" class="dnd">
+                                <div id="symbol"></div>
+                            </div>
+                        </div>
+                        <h3 style="font-size: 30px;">
+                            Neelix | Roles/Backend Cheese
+                        </h3>
+                        <h4 style="font-size: 20px; margin-bottom: 5px;">
+                            neelix_74655
+                        </h4>
+                    </div>
+            </div>
+            <h3 style="color: #333333; font-size: 35px; margin-top: 10px; " class="stats-heading text-center my-1">
+                Management [2]
+            </h3>
+            <div style="    grid-template-columns: 1fr !important;
+            grid-template-rows: 1fr !important;" class="grid grid-3 text-center my-4">
+                    <div style="background-image: url(banners/1211207348153094196/a_d38a7ae54cd2368bb93921bf44473f4b_size-1024.gif); background-repeat: no-repeat; background-size: cover;">
+                        <div style="padding-top: 10px; background-color: transparent;" id="pfp">
+                            <img id="discord-avatar" src="avatars/1211207348153094196/1cd5f45973030fe5a0c5f321f6efc84d_size-80.png" class="disableDrag" alt="">
+                            <div id="point" class="online">
+                                <div id="symbol"></div>
+                            </div>
+                        </div>
+                        <h3 style="font-size: 30px;">
+                            vred [Chief of Workers]
+                        </h3>
+                        <h4 style="font-size: 20px; margin-bottom: 5px;">
+                            .vrederik.
+                        </h4>
+                    </div>
+                    <div style="background-image: url(https://xon.lol/main); background-repeat: no-repeat; background-size: cover;">
+                        <div style="padding-top: 10px; background-color: transparent;" id="pfp">
+                            <img id="discord-avatar" src="avatars/913934923663036497/ec993da94e81e05912d886ff72b6623e_size-80.png" class="disableDrag" alt="">
+                            <div id="point" class="offline">
+                                <div id="symbol"></div>
+                            </div>
+                        </div>
+                        <h3 style="font-size: 30px;">
+                            Spyder | Crew Incharge TEMP
+                        </h3>
+                        <h4 style="font-size: 20px; margin-bottom: 5px;">
+                            spyderfym
+                        </h4>
+                    </div>
+            </div>
+            <h3 style="color: #333333; font-size: 35px; margin-top: 10px; " class="stats-heading text-center my-1">
+                Administrator [5]
+            </h3>
+            <div style="    grid-template-columns: 1fr !important;
+            grid-template-rows: 1fr !important;" class="grid grid-3 text-center my-4">
+                    <div style="background-image: url(https://xon.lol/main); background-repeat: no-repeat; background-size: cover;">
+                        <div style="padding-top: 10px; background-color: transparent;" id="pfp">
+                            <img id="discord-avatar" src="avatars/946505924812628038/51af8ea2918157e4f294b14545dddb7a_size-80.png" class="disableDrag" alt="">
+                            <div id="point" class="offline">
+                                <div id="symbol"></div>
+                            </div>
+                        </div>
+                        <h3 style="font-size: 30px;">
+                            No. | Destiny&#39;s Bestie [Cheese]
+                        </h3>
+                        <h4 style="font-size: 20px; margin-bottom: 5px;">
+                            no.official
+                        </h4>
+                    </div>
+                    <div style="background-image: url(https://xon.lol/main); background-repeat: no-repeat; background-size: cover;">
+                        <div style="padding-top: 10px; background-color: transparent;" id="pfp">
+                            <img id="discord-avatar" src="avatars/750309619351552000/bf1b700d7bc83717ea70e88e870b70ee_size-80.png" class="disableDrag" alt="">
+                            <div id="point" class="offline">
+                                <div id="symbol"></div>
+                            </div>
+                        </div>
+                        <h3 style="font-size: 30px;">
+                            Cheese cult manager | Growth
+                        </h3>
+                        <h4 style="font-size: 20px; margin-bottom: 5px;">
+                            usmcisgood
+                        </h4>
+                    </div>
+                    <div style="background-image: url(https://xon.lol/main); background-repeat: no-repeat; background-size: cover;">
+                        <div style="padding-top: 10px; background-color: transparent;" id="pfp">
+                            <img id="discord-avatar" src="avatars/1142439273887449099/55e1c5dc3477f1fc1f4d2a6e799dbe76_size-80.png" class="disableDrag" alt="">
+                            <div id="point" class="offline">
+                                <div id="symbol"></div>
+                            </div>
+                        </div>
+                        <h3 style="font-size: 30px;">
+                            vin | Growth
+                        </h3>
+                        <h4 style="font-size: 20px; margin-bottom: 5px;">
+                            vin_akiller
+                        </h4>
+                    </div>
+                    <div style="background-image: url(banners/1092380803427733504/a_d2702390e2a7cc3bbc119b2e79e3308a_size-1024.gif); background-repeat: no-repeat; background-size: cover;">
+                        <div style="padding-top: 10px; background-color: transparent;" id="pfp">
+                            <img id="discord-avatar" src="avatars/1092380803427733504/bbc12ac98dc08fc413ac7b6ab18deac9_size-80.png" class="disableDrag" alt="">
+                            <div id="point" class="offline">
+                                <div id="symbol"></div>
+                            </div>
+                        </div>
+                        <h3 style="font-size: 30px;">
+                            Cheez Priest | Growth
+                        </h3>
+                        <h4 style="font-size: 20px; margin-bottom: 5px;">
+                            stilltypewriting
+                        </h4>
+                    </div>
+                    <div style="background-image: url(banners/1137240113043226724/bc4562a1613d7ee585a72924dd14ecfe_size-1024.png); background-repeat: no-repeat; background-size: cover;">
+                        <div style="padding-top: 10px; background-color: transparent;" id="pfp">
+                            <img id="discord-avatar" src="guilds/1035929703866961991/users/1137240113043226724/avatars/8a1ded689783f9cb571b94bc49425a95_size-80.png" class="disableDrag" alt="">
+                            <div id="point" class="offline">
+                                <div id="symbol"></div>
+                            </div>
+                        </div>
+                        <h3 style="font-size: 30px;">
+                            CA | Peppy
+                        </h3>
+                        <h4 style="font-size: 20px; margin-bottom: 5px;">
+                            peppy0101001
+                        </h4>
+                    </div>
+            </div>
+            <h3 style="color: #333333; margin-bottom: 30px;" class="stats-heading text-center my-1">
+                + 14 others
+            </h3>
+        </div>
+    </section>
+    <section class="cloud bg-primary py-2" id="Faqs" style="position: relative; overflow: hidden; z-index: 1;">
+        <div class="container">
+            <h2 style="color: white;" class="stats-heading text-center my-1">
+                FAQS
+            </h2>
+            <div style="grid-template-columns: repeat(2, 1fr); margin-top: 30px; ">
+                <div class="faq">
+                    <div class="faq-item">
+                        <button class="fheader">
+                            How do I apply for staff? <span class="icon">+</span>
+                        </button>
+                        <div class="fcontent">
+                            <p>
+                                To apply for staff, please select the <b>Staff Application</b> button in the <span class="ch"># info</span> channel. You must meet all the
+                                requirements to qualify.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="fheader">
+                            Is this an NSFW server? <span class="icon">+</span>
+                        </button>
+                        <div class="fcontent">
+                            <p>No! This is a fully SFW server, appropriate for all ages.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="fheader">
+                            Why can't I advertise in self-advertising channel? <span class="icon">+</span>
+                        </button>
+                        <div class="fcontent">
+                            <p>To be able to send messages in the <b>self-advertising</b> ⁠<span class="ch">#
+                                    self-advertising</span> channel, you must have reached level 1
+                                or higher. For more information, please select the <b>Levels</b> button in the ⁠<span class="ch"># info</span> channel.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="fheader">
+                            How do I apply for a helper/assistant role? <span class="icon">+</span>
+                        </button>
+                        <div class="fcontent">
+                            <p>For more information on helper role requirements and how to apply, please check the
+                                ⁠⁠<span class="ch"># 📭｜helper-info</span> channel. Please also check the guide
+                                associated with the role that you are applying for so that you know the correct
+                                information or procedures to follow while performing your duties.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="fheader">
+                            How do I level up/check my level? <span class="icon">+</span>
+                        </button>
+                        <div class="fcontent">
+                            <p>You can check your current level using the <b>/rank</b> command in the <span class="ch">⁠# commands</span> channel. To
+                                level up, you need to accumulate XP by being active and chatting. XP is awarded at a
+                                fixed time interval and is capped to resist spamming. For more information on levels and
+                                the perks that can be obtained as a incentive, please select the <b>Levels</b> button in
+                                the ⁠<span class="ch"># info channel</span></p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="fheader">
+                            How do I report staff/high-ranked staff? <span class="icon">+</span>
+                        </button>
+                        <div class="fcontent">
+                            <p>To report a <span class="ch">@Trial Moderator</span> or <span class="ch">@Moderator</span>, please contact a <span class="ch">@Head
+                                    Moderator</span> or
+                                <span class="ch">@Administrator</span>.
+                                To report an <span class="ch">@Administrator</span>, please contact a <span class="ch">@Management</span> or higher.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="fheader">
+                            Why can't I send images in general chat? <span class="icon">+</span>
+                        </button>
+                        <div class="fcontent">
+                            <p>To be able to send images in the <span class="ch">⁠⁠# chat</span> channel, you must
+                                have reached level 5 or higher. For more information, please select the <b>Levels</b>
+                                button in
+                                the ⁠<span class="ch"># info</span> channel.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="fheader">
+                            How do I partner or affiliate with the server? <span class="icon">+</span>
+                        </button>
+                        <div class="fcontent">
+                            <p>To partner or affiliate with the server, please open a <b>Partnership Ticket</b> in the
+                                ⁠<span class="ch">⁠# support</span> channel. For more information on partnerships,
+                                please select the <b>Partnership
+                                    Guide</b> button in the <span class="ch"># info</span> channel.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="fheader">
+                            How do I get a custom role? <span class="icon">+</span>
+                        </button>
+                        <div class="fcontent">
+                            <p>To qualify for a custom role, you must have reached level 70 or boosted the server. For
+                                more information on the perks available to boosters, please select the <b>Booster
+                                    Perks</b>
+                                button in the <span class="ch">⁠# info</span> channel.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="fheader">
+                            How do I get updates about the server? <span class="icon">+</span>
+                        </button>
+                        <div class="fcontent">
+                            <p>For server news and updates, please check ⁠⁠<span class="ch">⁠⁠⁠# news</span>
+                                periodically. Through Onboarding, you can also add
+                                <span class="ch">@Announcement Ping</span> role to yourself to be notified when there is
+                                a new announcement.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <video class="bgvid" src="https://www.TheBackstreets.github.io/assets/videos/vid4.mp4" muted loop autoplay></video>
+    </section>
+    <!-- Footer -->
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3">
+            <div>
+                <img style="border-radius: 50%; height: 100px; width: 100px; margin-bottom: 5px;" src="icons/1035929703866961991/5157e455efee06b8773658fd3e44e2d1.png" class="disableDrag">
+                <h1>XON</h1>
+                <p>The Backstreets is not affiliated with Discord. All Rights Reserved.</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a id="HomeButton">Home</a></li>
+                    <li><a id="FeButton2">Features</a></li>
+                    <li><a id="StatButton2">Statistics</a></li>
+                    <div id="google_translate_element"></div>
+                </ul>
+            </nav>
+            <div class="social1">
+                <a href="https://discord.gg/soon"><i class="bi bi-discord fa-2x"></i></a>
+                <a href="https://www.reddit.com/r/xondiscordserver/"><i class="fab fa-reddit fa-2x"></i></a>
+                <a href="https://www.instagram.com/xondiscord"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://x.com/Mr_ExpTel"><i class="bi bi-twitter-x fa-2x"></i></a>
+            </div>
+        </div>
+        <p style="text-align: center; margin-top: 50px;">Made with 🫶🏼 by misclassify</p>
+        <p style="text-align: center;">
+            Sussy Baka.
+        </p>
+    </footer>
+    <button id="TopButton" class="bottomRightButton"><i class="fas fa-chevron-circle-up fa-2x"></i></button>
+</body>
+<script src="js/index.js"></script>
+<script type="text/javascript" src="translate_a/element_cb-googleTranslateElementInit.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/FAQ.js"></script>
+</html>
